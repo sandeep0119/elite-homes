@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elite homes</title>
+  <link rel="icon" href="images/elitehomeslogo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ===== NAVBAR ===== -->
+  <nav>
+   <a href="index.html"> <img src="images/logonobg1.png" alt="Elite homes Interiors Logo"> </a><!-- UPLOAD LOGO -->
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#textures">Textures</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <header>
+    <h1>Elite Homes</h1>
+      <p>Luxury Italian textures crafted with elegance and precision. Designed and owned by <b>Ram Gupta.</b></p>
+      <h2>Italian Textures | Paints | Polish & Deco</h2>
+    <a class="btn" href="#contact">Book Consultation</a>
+  </header>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>
+      Elite Homes specializes in premium Italian textures, micro cement, Venetian plaster, and luxury wall finishes.
+      Our designs blend European craftsmanship with modern Indian living.
+    </p>
+  </section>
+
+  <!-- ===== TEXTURES ===== -->
+  <section id="textures">
+    <h2>Our Italian Textures</h2>
+    <div class="textures">
+      <div class="card">
+        <img src="images/venetian.jpg"><!-- UPLOAD TEXTURE IMAGE -->
+        <div class="content"><h3>Venetian Plaster</h3><p>Luxury marble finish walls.</p></div>
+      </div>
+      <div class="card">
+        <img src="images/micro.jpg"><!-- UPLOAD TEXTURE IMAGE -->
+        <div class="content"><h3>Micro Cement</h3><p>Modern seamless surfaces.</p></div>
+      </div>
+      <div class="card">
+        <img src="images/metallic.jpg"><!-- UPLOAD TEXTURE IMAGE -->
+        <div class="content"><h3>Metallic Finish</h3><p>Bold Italian metallic effects.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== VIDEO ===== -->
+  <section class="video-section">
+    <h2>Our Work in Motion</h2>
+    <video controls>
+      <source src="assets/work-video.mp4" type="video/mp4"><!-- UPLOAD VIDEO -->
+      Your browser does not support video.
+    </video>
+  </section>
+
+  <!-- ===== GALLERY ===== -->
+<section class="project-gallery">
+  <h2>Project Gallery</h2>
+
+  <div class="gallery-preview" onclick="openGallery()">
+    <img src="images/proj.jpg" alt="Project Image">
+
+    <div class="overlay">
+      <span>+13</span>
+    </div>
+  </div>
+</section>
+
+<!-- Fullscreen Gallery -->
+<div class="lightbox" id="lightbox">
+  <span class="close" onclick="closeGallery()">&times;</span>
+
+  <div class="lightbox-content">
+    <img src="images/pic1.jpeg">
+    <img src="images/pic2.jpeg">
+    <img src="images/pic3.jpeg">
+    <img src="images/pic4.jpeg">
+    <img src="images/pic5.jpeg">
+    <img src="images/pic6.jpeg">
+    <img src="images/pic7.jpeg">
+    <img src="images/pic8.jpeg">
+    <img src="images/pic9.jpeg">
+    <img src="images/pic10.jpeg">
+    <img src="images/pic11.jpeg">
+    <img src="images/pic12.jpeg">
+    <img src="images/pic13.jpeg">
+  </div>
+</div>
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+<form action="https://api.web3forms.com/submit" method="POST">
+
+  <!-- REQUIRED ACCESS KEY -->
+  <input type="hidden" name="access_key" value="eb10f851-a058-4bc9-a23f-7f780ac27947">
+
+  <!-- OPTIONAL EMAIL SUBJECT -->
+  <input type="hidden" name="subject" value="New Enquiry - Elite Homes">
+
+  <!-- ANTI-SPAM -->
+  <input type="checkbox" name="botcheck" class="hidden" style="display:none;">
+
+  <input type="text" name="name" placeholder="Your Name" required>
+
+  <input type="email" name="email" placeholder="Email" required>
+
+  <input type="tel" name="phone" placeholder="Phone Number" required>
+
+  <textarea name="message" rows="4" placeholder="Your Requirement" required></textarea>
+
+  <button class="btn" type="submit">Send Enquiry</button>
+
+
+</form>
+
+  </section>
+
+<footer>
+  <p>© 2026 Elite Homes</p>
+  <p>
+    Owner: <b>Ram Gupta</b> <br>
+    📞 <a href="tel:+918790820396">+91 87908 20396</a> |
+    ✉️ <a href="mailto:elitehomes935@gmail.com">elitehomes935@gmail.com</a>
+  </p>
+  <p>Italian Texture Specialists</p>
+</footer>
+<script>
+function openGallery() {
+  document.getElementById("lightbox").style.display = "flex";
+}
+
+function closeGallery() {
+  document.getElementById("lightbox").style.display = "none";
+}
+</script>
+</body>
+</html>
