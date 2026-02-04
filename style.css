@@ -39,7 +39,7 @@
     .card .content { padding:20px; }
 
     .video-section video {
-     height:350px; width:20%; border-radius:20px; margin-top:30px;
+     height:350px; width:100%; border-radius:20px; margin-top:30px;
     }
 
     .gallery {
